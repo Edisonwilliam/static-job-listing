@@ -29,7 +29,7 @@ const BoxComponent = () => {
 
     
       {selectedFilters.length > 0 && (
-        <div className="bg-white shadow-md rounded-lg p-4 mb-20 flex items-center justify-between">
+        <div className="bg-white shadow-md rounded-lg p-4 mb-20 flex items-center justify-between mx-2">
           <div className="flex flex-wrap gap-3">
             {selectedFilters.map((filter, index) => (
               <div
