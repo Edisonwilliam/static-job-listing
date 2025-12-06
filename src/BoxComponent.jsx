@@ -29,7 +29,7 @@ const BoxComponent = () => {
 
     
       {selectedFilters.length > 0 && (
-        <div className="bg-white shadow-md rounded-lg p-4 mb-20 flex items-center justify-between mx-2">
+        <div className="bg-white shadow-md rounded-lg p-4 mb-20 flex items-center justify-between">
           <div className="flex flex-wrap gap-3">
             {selectedFilters.map((filter, index) => (
               <div
@@ -67,17 +67,17 @@ const BoxComponent = () => {
         >
           <img src={item.logo} alt={item.company} className="-mt-14 md:mt-0" />
 
-          <div className="mt-3 flex space-x-5 items-center">
-            <h2 className="text-teal-400 text-2xl font-bold">{item.company}</h2>
+          <div className="mt-3 flex space-x-3 items-center">
+            <h2 className="text-teal-400 text-lg font-bold">{item.company}</h2>
 
             <div className="flex space-x-3">
               {item.new && (
-                <div className="bg-teal-400 px-2 py-1 rounded-xl">
+                <div className="bg-teal-400 px-1 py-1 rounded-xl">
                   <h2 className="text-white font-bold">NEW!</h2>
                 </div>
               )}
               {item.featured && (
-                <div className="bg-gray-800 px-2 py-1 rounded-xl">
+                <div className="bg-gray-800 px-1 py-1 rounded-xl">
                   <h2 className="text-white font-bold">FEATURED</h2>
                 </div>
               )}
